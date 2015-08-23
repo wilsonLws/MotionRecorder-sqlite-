@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.touchimagetest.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#ffffff">
+    <!-- 顶部  -->
+    <RelativeLayout
+        android:id="@+id/MyLayout_top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true" >
+        <!-- 标题 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+                android:text="距离"
+                android:textSize="12sp"
+                android:textColor="#a9a9a9"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+                android:text="步数"
+                android:textSize="12sp"
+                android:textColor="#a9a9a9"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|left|center"
+                android:text="运动时间"
+                android:textSize="12sp"
+                android:textColor="#a9a9a9"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|left|center"
+                android:text="日期"
+                android:textSize="12sp"
+                android:textColor="#a9a9a9"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!-- 显示列表 -->
+    <RelativeLayout
+        android:id="@+id/Content_Layout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/MyLayout_top"
+        >
+        <!-- 显示表内容 -->
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>  
